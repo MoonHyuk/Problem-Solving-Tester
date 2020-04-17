@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  tester:
+    build: .
+    image: ps-tester
+    container_name: ps-tester
+    volumes:
+      - ./:/src/ps/
+    env_file:
+      - .env
